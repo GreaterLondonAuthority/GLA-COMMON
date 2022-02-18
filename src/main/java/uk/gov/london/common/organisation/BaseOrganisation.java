@@ -9,10 +9,6 @@ package uk.gov.london.common.organisation;
 
 public abstract class BaseOrganisation {
 
-    public abstract OrganisationType getType();
-
-    public abstract void setType(OrganisationType type);
-
     public abstract String getExternalReference();
 
     public abstract void setExternalReference(String ref);

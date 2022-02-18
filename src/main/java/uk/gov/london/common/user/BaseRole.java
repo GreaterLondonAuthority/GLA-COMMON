@@ -18,24 +18,28 @@ public abstract class BaseRole {
     public static final String GLA_SPM = "ROLE_GLA_SPM";
     public static final String GLA_PM = "ROLE_GLA_PM";
     public static final String GLA_REGISTRATION_APPROVER = "ROLE_GLA_REGISTRATION_APPROVER";
+    public static final String GLA_PROGRAMME_ADMIN = "ROLE_GLA_PROGRAMME_ADMIN";
     public static final String GLA_FINANCE = "ROLE_GLA_FINANCE";
     public static final String GLA_READ_ONLY = "ROLE_GLA_READ_ONLY";
     public static final String PROJECT_READER = "ROLE_PROJECT_READER";
     public static final String ORG_ADMIN = "ROLE_ORG_ADMIN";
     public static final String PROJECT_EDITOR = "ROLE_PROJECT_EDITOR";
     public static final String TECH_ADMIN = "ROLE_TECH_ADMIN";
+    public static final String INTERNAL_BLOCK_EDITOR = "ROLE_INTERNAL_BLOCK_EDITOR";
 
     public static final String OPS_ADMIN_DESC = "OPS Admin";
     public static final String GLA_ORG_ADMIN_DESC = "GLA Organisation Admin";
     public static final String GLA_SPM_DESC = "Senior Project Manager";
     public static final String GLA_PM_DESC = "Project Manager";
     public static final String GLA_REGISTRATION_APPROVER_DESC = "Registration Approver";
+    public static final String GLA_PROGRAMME_ADMIN_DESC = "Programme Admin";
     public static final String GLA_FINANCE_DESC = "GLA Finance";
     public static final String GLA_READ_ONLY_DESC = "GLA Read Only";
     public static final String PROJECT_READER_DESC = "Project Reader";
     public static final String ORG_ADMIN_DESC = "Organisation Admin";
     public static final String PROJECT_EDITOR_DESC = "Project Editor";
     public static final String TECH_ADMIN_DESC = "Technical Admin";
+    public static final String INTERNAL_BLOCK_EDITOR_DESC = "Internal Block Editor";
 
     public static final List<String> ALL_ROLES = Arrays.asList(
             OPS_ADMIN,
@@ -43,12 +47,14 @@ public abstract class BaseRole {
             GLA_SPM,
             GLA_PM,
             GLA_REGISTRATION_APPROVER,
+            GLA_PROGRAMME_ADMIN,
             GLA_FINANCE,
             GLA_READ_ONLY,
             PROJECT_READER,
             ORG_ADMIN,
             PROJECT_EDITOR,
-            TECH_ADMIN
+            TECH_ADMIN,
+            INTERNAL_BLOCK_EDITOR
     );
 
     private static final List<String> GLA_ROLES = Arrays.asList(
@@ -57,6 +63,7 @@ public abstract class BaseRole {
             GLA_SPM,
             GLA_PM,
             GLA_REGISTRATION_APPROVER,
+            GLA_PROGRAMME_ADMIN,
             GLA_FINANCE,
             GLA_READ_ONLY
     );
@@ -73,12 +80,14 @@ public abstract class BaseRole {
         put(GLA_SPM, GLA_SPM_DESC);
         put(GLA_PM, GLA_PM_DESC);
         put(GLA_REGISTRATION_APPROVER, GLA_REGISTRATION_APPROVER_DESC);
+        put(GLA_PROGRAMME_ADMIN, GLA_PROGRAMME_ADMIN_DESC);
         put(GLA_FINANCE, GLA_FINANCE_DESC);
         put(GLA_READ_ONLY, GLA_READ_ONLY_DESC);
         put(PROJECT_READER, PROJECT_READER_DESC);
         put(ORG_ADMIN, ORG_ADMIN_DESC);
         put(PROJECT_EDITOR, PROJECT_EDITOR_DESC);
         put(TECH_ADMIN, TECH_ADMIN_DESC);
+        put(INTERNAL_BLOCK_EDITOR, INTERNAL_BLOCK_EDITOR_DESC);
     }};
 
     /**
@@ -106,6 +115,7 @@ public abstract class BaseRole {
         if (roles.contains(GLA_SPM)) return GLA_SPM;
         if (roles.contains(GLA_PM)) return GLA_PM;
         if (roles.contains(GLA_REGISTRATION_APPROVER)) return GLA_REGISTRATION_APPROVER;
+        if (roles.contains(GLA_PROGRAMME_ADMIN)) return GLA_PROGRAMME_ADMIN;
         if (roles.contains(GLA_FINANCE)) return GLA_FINANCE;
         if (roles.contains(GLA_READ_ONLY)) return GLA_READ_ONLY;
         if (roles.contains(ORG_ADMIN)) return ORG_ADMIN;
