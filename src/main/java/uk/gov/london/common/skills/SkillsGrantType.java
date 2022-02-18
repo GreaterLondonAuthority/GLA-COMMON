@@ -10,5 +10,6 @@ package uk.gov.london.common.skills;
     public enum SkillsGrantType {
         AEB_GRANT,
         AEB_PROCURED,
-        AEB_LEARNER_SUPPORT
+        AEB_LEARNER_SUPPORT,
+        AEB_NSCT
     }

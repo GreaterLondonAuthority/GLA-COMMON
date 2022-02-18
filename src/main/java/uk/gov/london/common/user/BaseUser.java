@@ -7,8 +7,6 @@
  */
 package uk.gov.london.common.user;
 
-import uk.gov.london.common.organisation.OrganisationType;
-
 import java.util.Set;
 import java.util.stream.Collectors;
 
@@ -30,13 +28,5 @@ public abstract class BaseUser {
     }
 
     public abstract Set<? extends BaseRole> getRoles();
-
-    /**
-     * @param organisationType
-     * @return true if the user has an approved role in an organisation of the given type.
-     */
-    public boolean inOrganisationOfType(OrganisationType organisationType) {
-        return getRoles().stream().filter(BaseRole::isApproved).anyMatch(r -> organisationType.equals(r.getOrganisation().getType()));
-    }
 
 }
